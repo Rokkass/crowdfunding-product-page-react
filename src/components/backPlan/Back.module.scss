@@ -170,3 +170,16 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .radioButton {
+    left: 10px;
+  }
+  .top__wrapper {
+    margin: 20px 30px 40px 20px;
+    padding-left: 10px;
+  }
+  .plansLeft {
+    left: 10px;
+  }
+}
