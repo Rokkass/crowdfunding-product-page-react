@@ -1,0 +1,23 @@
+header {
+  background-image: url(../../assets/images/image-hero-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 10px 10px;
+  height: 400px;
+  padding: 50px 165px;
+  position: absolute;
+  width: 100%;
+}
+
+.header {
+  color: white;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    text-align: center;
+    background-image: url(../../assets/images/image-hero-mobile.jpg);
+    padding: 30px 20px;
+  }
+}

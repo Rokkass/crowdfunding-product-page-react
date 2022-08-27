@@ -1,0 +1,29 @@
+.button {
+  background-color: var(--moderate-cyan);
+  border: 0;
+  border-radius: 28px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  max-width: 170px;
+  padding: 20px 30px;
+}
+
+.rejected {
+  @extend .button;
+  background-color: #ef4f4f;
+}
+
+.button:active {
+  background-color: var(--dark-cyan);
+}
+
+.disabled {
+  @extend .button;
+  background-color: var(--light-gray);
+  width: 150px;
+
+  &:active {
+    background-color: var(--light-gray);
+  }
+}

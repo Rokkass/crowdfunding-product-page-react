@@ -1,0 +1,172 @@
+.wrapper {
+  background-color: #fff;
+  border: 1px solid var(--border-gray);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.wrapperSelected {
+  @extend .wrapper;
+  border: 2px solid var(--moderate-cyan);
+}
+.wrapper:hover h4 {
+  color: var(--moderate-cyan);
+}
+
+.wrapper:hover .radioButton {
+  border: 1px solid var(--moderate-cyan);
+}
+
+.outOfStock {
+  @extend .wrapper;
+  opacity: 0.5;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.planCost {
+  color: var(--moderate-cyan);
+  display: inline;
+}
+
+.planDescription {
+  line-height: 1.6rem;
+  color: var(--text-gray);
+}
+.info__wrapper {
+  position: relative;
+}
+.plansLeft {
+  font-size: 1.5rem;
+  height: 24px;
+  position: absolute;
+  right: 0;
+}
+
+.clearStyles {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.radioButton {
+  border: 1px solid var(--border-gray);
+  border-radius: 15px;
+  height: 30px;
+  left: -10px;
+  position: absolute;
+  width: 30px;
+}
+
+.radioButtonSelected {
+  @extend .radioButton;
+  background-color: var(--moderate-cyan);
+  border: 1px solid var(--moderate-cyan);
+  box-shadow: inset 0 0 0 5px #fff;
+}
+
+.top__wrapper {
+  margin: 20px 30px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.bottom__wrapper {
+  align-items: center;
+  color: var(--text-gray);
+  display: flex;
+  margin: 20px 30px;
+  justify-content: space-between;
+}
+
+.borderLine {
+  background-color: var(--border-gray);
+  height: 2px;
+  padding: 0px -30px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.inputPledge {
+  background-image: url(../../assets/images/dollarSign.svg);
+  background-repeat: no-repeat;
+  background-position: 25% center;
+  border: 1px solid var(--moderate-cyan);
+  border-radius: 25px;
+  font-weight: 700;
+  height: 50px;
+  padding: 0 5px 0 38px;
+  outline: var(--margin-bottom);
+  width: 100px;
+  &::placeholder {
+    color: var(--light-gray);
+  }
+}
+.inputPledge::-webkit-outer-spin-button,
+.inputPledge::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputPledge[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper {
+    font-size: 0.85rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  .plansLeft {
+    font-size: 1rem;
+  }
+  .plansLeft {
+    bottom: -34px;
+    left: 20px;
+  }
+  .header__wrapper {
+    margin-left: 60px;
+  }
+  .top__wrapper {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+  .radioButton {
+    left: 25px;
+    top: 12px;
+  }
+  .header__wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bottom__wrapper {
+    span {
+      margin-bottom: 20px;
+    }
+  }
+  .bottom__wrapper {
+    flex-direction: column;
+  }
+  .form {
+    justify-content: space-around;
+    width: 100%;
+  }
+}

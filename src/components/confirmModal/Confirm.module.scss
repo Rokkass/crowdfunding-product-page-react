@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: #fff;
+  border: 1px solid var(--border-gray);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -5px var(--moderate-cyan);
+  left: 0;
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 30px 50px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 50vh;
+  transform: translateY(-50vh);
+  width: 90%;
+  z-index: 5;
+
+  img {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+  span {
+    color: var(--text-gray);
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,63 @@
+.wrapper {
+  border: 1px solid var(--border-gray);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.outOfStock {
+  @extend .wrapper;
+  opacity: 0.5;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.planCost {
+  color: var(--moderate-cyan);
+}
+
+.planDescription {
+  line-height: 1.6rem;
+}
+
+.plansLeft {
+  font-size: 1.5rem;
+  height: 24px;
+}
+
+.clearStyles {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bottom__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 470px) {
+  .wrapper {
+    font-size: 0.85rem;
+  }
+  .header__wrapper {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .bottom__wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
